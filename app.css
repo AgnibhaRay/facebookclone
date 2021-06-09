@@ -1,0 +1,115 @@
+body{
+    margin: 20px;
+    background-color: #f0f2f5;
+    padding-top: 6%;
+    margin: 0;
+}
+@font-face {
+    font-family: apple;
+    src: url(font/SF-Pro-Display-Regular.otf);
+}
+#loger{
+    width: 100%;
+    height: -webkit-fill-available;
+    font-family: Helvetica, Arial, sans-serif;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+}
+#loged{
+    justify-content: center;
+    align-items: center;
+    flex-flow: row;
+}
+@media only screen and (max-width: 900px) {
+    #loger {
+      flex-flow: column;
+    }
+  }
+.text-div{
+    display: flex;
+    flex-flow: column;
+    width: 370px;
+    height: 170px;
+    margin-left: 10%;
+    height: fit-content;
+    font-family: apple , Helvetica, Arial, sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    padding-right: 10%;
+    /* float: left; */
+    margin-left: 10%;
+    padding-bottom: 90px;
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-user-drag: none;
+}
+.user-div{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    background-color: #fff;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+    box-sizing: border-box;
+    margin: 40px 0 0;
+    padding: 20px 0 28px;
+    width: 396px;
+    height: 370px;
+/*     margin-right: 20px; */
+}
+.input-div{
+    width: 90%;
+    height: 52px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    border: 1px solid #dddfe2;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    background-color: #fff;
+}
+input{
+    width: 90%;
+    height: 46px;
+    margin-left: 5%;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    border: transparent solid;
+    background-color: transparent;
+    outline: none !important;
+}
+.log{
+    width: 90%;
+    height: 52px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    border: transparent solid;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    background-color: #1877f2;
+    color: #fff;
+    cursor: pointer;
+    outline: none !important;
+}
+.log:focus{
+    background-image: url(assets/thobber.svg);
+    background-repeat: no-repeat;
+    background-size: 22px;
+    background-position-y: center;
+    background-position-x: 32%;
+}
+.create{
+    width: 60%;
+    height: 52px;
+    border: transparent solid;
+    background-color: #42b72a;
+    font-size: 18px;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 40px;
+    outline: none !important;
+}

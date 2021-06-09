@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Facebook - Log in or register</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' type='text/css' media='screen' href='app.css'>
+</head>
+<body>
+  <div id="loger">
+    <div class="text-div">
+      <img src="assets/facebook.svg" width="270px" style="margin-left: -24px;">
+      <a>Helps to keep in touch and communicate with your acquaintances on Facebook.</a>
+    </div>
+    <div class="user-div">
+      <div class="input-div">
+        <input type="email" placeholder="Email or phone number:" id="email_field"/>
+      </div>
+      <div class="input-div">
+        <input type="password" placeholder="Password" id="password_field"/>
+      </div>
+      <button onclick="login()" class="log">Log in</button>
+      <a href="#" style="text-decoration: none; color: #1877f2; line-height: 3;
+                         border-bottom: 1px solid #dadde1; width: 90%; text-align: center;">
+                         Forgot password?
+      </a>
+      <button class="create">Create an account</button>
+    </div>
+  </div>
+  <div id="loged">
+    <a id="user"></a>
+    <button onclick="logout()">Logout</button>
+  </div>
+  <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+<!--   <script src="firebase.js"></script> -->
+  <script>
+    // Initialize Firebase
+    var firebaseConfig = {
+        apiKey: "AIzaSyA7oe30JSluusH7OwqY_Jykcxw9BSvP284",
+        authDomain: "facebook-c5f0e.firebaseapp.com",
+        projectId: "facebook-c5f0e",
+        storageBucket: "facebook-c5f0e.appspot.com",
+        messagingSenderId: "862911732192",
+        appId: "1:862911732192:web:be2587942eea1c1d4b3385",
+        measurementId: "G-X83FV39X1M"
+      };
+    firebase.initializeApp(firebaseConfig);
+  </script>
+  <script src="app-bundle.js"></script>
+   <!-- <input type="email" placeholder="Email" id="email_field" />
+    <input type="password" placeholder="Password" id="password_field" />
+    <button onclick="signUp()">Signup</button> -->
+</body>
+</html>
